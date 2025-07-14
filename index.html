@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería General</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="image/logolibreria.png" alt="Logo" />
+    </div>
+    <nav>
+      <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> Inicio</a>
+      <a href="librosdisponibles.html" class="btn"><i class="fa-solid fa-book-open"></i> Libros Disponibles</a>
+      <a href="contacto.html" class="btn"><i class="fa-solid fa-envelope"></i> Contáctanos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="image/bannerleer.jpg" alt="Banner de lectura" class="banner-img" />
+    <div class="hero-content">
+      <h1><br><span></span></h1>
+      <p></p>
+    </div>
+  </section>
+
+  <section class="about">
+  <div class="content">
+    <div class="text">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>Nuestra librería fue fundada en 1932, lo que la convierte en la más antigua y representativa de Zaragoza ubicada en España. En sus más de 1.100 metros cuadrados distribuidos en cinco plantas, el usuario puede encontrar todo tipo de publicaciones y material de papelería. Nuestro equipo está conformado por profesionales apasionados por la lectura, siempre dispuestos a asesorar a cada visitante y ayudarle a encontrar el libro ideal. Con más de 90 años de trayectoria, seguimos siendo un punto de encuentro cultural para generaciones de lectores que confían en la calidad, variedad y calidez de Librería General.</p>
+    </div>
+    <div class="image">
+      <img src="image/astronauta.jpg" alt="Astronauta 1" class="animar-img" />
+    </div>
+  </div>
+  </section>
+
+<br>
+<br>
+<br>
+
+  <section class="books">
+  <div class="content">
+    <div class="text">
+      <h2>NUESTROS LIBROS</h2>
+      <p>Aquí encontrarás una amplia variedad de libros para todos los gustos. Desde encantadoras historias para niños hasta apasionantes novelas para adultos, nuestra colección está diseñada para satisfacer a lectores de todas las edades. Nuestra librería se actualiza constantemente con las últimas novedades editoriales, así como con clásicos que nunca pasan de moda. Sea cual sea tu interés, aquí en Librería General podrás sumergirte en el fascinante mundo de la lectura y descubrir tu próximo gran libro con nosotros!</p>
+    </div>
+    <div class="image">
+      <img src="image/astronauta2.jpg" alt="Astronauta 2" class="animar-img" />
+    </div>
+  </div>
+  </section>
+
+
+  <section class="bestsellers">
+    <h2>LOS MÁS COMPRADOS</h2>
+    <div class="gallery contenedor-libros">
+      <img src="image/alicia.jpg" alt="Alicia en el país de las maravillas" />
+      <img src="image/charlie.jpg" alt="Charlie y la fábrica de chocolate" />
+      <img src="image/carmelo.jpg" alt="El caballero Carmelo" />
+    </div>
+    <br>
+    <a href="librosdisponibles.html" class="btn-primary">CONSEGUIR LIBROS</a>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-left">
+      <p>© 2025 - Librería General</p>
+    </div>
+    <div class="footer-right">
+      <p>Teléfono: (+34) 976 224 483</p>
+      <p>Gmail: comercial@libreriageneral.es</p>
+    </div>
+  </footer>
+  
+  <script>
+    const animarImgs = document.querySelectorAll('.animar-img');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+  
+    animarImgs.forEach(img => {
+      observer.observe(img);
+    });
+  </script>
+  
+</body>
+</html>

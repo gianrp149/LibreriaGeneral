@@ -1,0 +1,135 @@
+.img2 {
+    animation: girar 10s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.navbar {
+    background-color: #006799;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  
+  .navbar .btn {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navbar-custom {
+    background-color: #006799;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .btn-custom {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .footer {
+    background-color: #4db475;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .footer-custom {
+    background-color: #4db475;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8rem 8rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .footer-custom p {
+    margin: 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-left {
+    text-align: left;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3rem;
+    text-align: left;
+  }
+
+  .img-libro {
+    max-width: 500px;
+    max-height: 350px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .seccion-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4db475;
+    margin-bottom: 1rem;
+  }
+  
+  .seccion-texto {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+
+  .redes-contacto {
+    font-size: 2rem;
+    line-height: 1.6;
+    padding-left: 0.5rem;
+  }
+
+  .espaciado-imagen {
+    margin-left: 2rem;
+  }
+  
+  .espaciado-mapa {
+    margin-left: 2rem;
+  }
